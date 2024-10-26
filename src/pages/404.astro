@@ -1,0 +1,19 @@
+---
+import NavBarM from "../components/MOBILE/NavBar-M.astro";
+import NavBarP from "../components/PC/NavBar-P.astro";
+---
+
+<div
+  class='h-screen w-screen overflow-x-hidden relative bg-red-400 bg-gradient-to-b from-[#c5f9d7] via-[#f7d486] to-[#f27a7d]'
+>
+  <NavBarP />
+  <NavBarM />
+  <div
+    class='h-[80vh] w-full flex items-center justify-center text-[#222] min-[990px]:text-[5vh] px-[18vw] max-[990px]:px-[2vw] max-[990px]:text-[3vh] text-start'
+  >
+    <span
+      >Oops! Looks like you've stumbled upon a page that's taken a temporary
+      vacation from the internet. <br /> Page not found :(
+    </span>
+  </div>
+</div>

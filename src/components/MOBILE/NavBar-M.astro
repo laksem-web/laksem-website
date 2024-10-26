@@ -1,0 +1,193 @@
+---
+import { Image } from "astro:assets";
+import Logo from "./../../assets/logo.webp";
+import Mobile from "../../layouts/Mobile.astro";
+---
+
+<Mobile>
+  <!-- MENU PAGE -->
+  <div
+    class='flex invisible flex-col bg-gradient-to-b fixed from-[#000] via-[#552535] to-[#552535] left-0 opacity-0 top- w-screen z-[999] h-[100dvh] menuPageMOB'
+  >
+    <div
+      class='flex h-max w-full justify-between pt-[2.8vh] pb-[2vh] px-[6vw] flex-[.6]'
+    >
+      <div class='flex items-center text-white h-full pl-[6vw] w-max'>
+        <a href='/'>
+          <Image
+            alt='logo'
+            class='object-contain w-max z-[1] h-[16vh]'
+            decoding='async'
+            loading='eager'
+            src={Logo}
+          /></a
+        >
+      </div>
+      <div
+        class='flex items-center justify-center flex-col w-max ease-in-out gap-[.8vh] h-full active:scale-[.9] closeBtnMOB duration-[300ms]'
+      >
+        <svg height='32' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'
+          ><path
+            d='m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275z'
+            fill='#fff'></path></svg
+        >
+      </div>
+    </div>
+    <div
+      class='flex font-[500] flex-col items-start flex-[3.6] h-full justify-evenly text-[#ffd] text-[3vh] w-full px-[2vw]'
+    >
+      <a
+        href='/about'
+        class='flex items-center h-max justify-center w-max gap-[.4vw] px-[2vh] py-[2vh] active:fill-[#fff9] active:scale-[.9] active:text-[#fff9] fill-[#fff9]'
+        ><svg height='32' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'
+          ><path
+            d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+            fill='#ffd'></path></svg
+        >About<svg
+          height='28'
+          viewBox='0 0 24 24'
+          xmlns='http://www.w3.org/2000/svg'
+          ><path
+            d='m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6q0-.425.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.712-.288T16 16z'
+          ></path></svg
+        ></a
+      >
+      <a
+        href='/contact'
+        class='flex items-center h-max justify-center w-max gap-[.4vw] px-[2vh] py-[2vh] active:fill-[#fff9] active:scale-[.9] active:text-[#fff9] fill-[#fff9]'
+        ><svg height='32' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'
+          ><path
+            d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+            fill='#ffd'></path></svg
+        >Contact us<svg
+          height='28'
+          viewBox='0 0 24 24'
+          xmlns='http://www.w3.org/2000/svg'
+          ><path
+            d='m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6q0-.425.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.712-.288T16 16z'
+          ></path></svg
+        ></a
+      ><a
+        href='/attractions'
+        class='flex items-center h-max justify-center w-max gap-[.4vw] px-[2vh] py-[2vh] active:fill-[#fff9] active:scale-[.9] active:text-[#fff9] fill-[#fff9]'
+        ><svg height='32' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'
+          ><path
+            d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+            fill='#ffd'></path></svg
+        >Nearest Attractions<svg
+          height='28'
+          viewBox='0 0 24 24'
+          xmlns='http://www.w3.org/2000/svg'
+          ><path
+            d='m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6q0-.425.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.712-.288T16 16z'
+          ></path></svg
+        ></a
+      >
+      <a
+        href='/gallery'
+        class='flex items-center h-max justify-center w-max gap-[.4vw] px-[2vh] py-[2vh] active:fill-[#fff9] active:scale-[.9] active:text-[#fff9] fill-[#fff9]'
+        ><svg height='32' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'
+          ><path
+            d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+            fill='#ffd'></path></svg
+        >Gallery<svg
+          height='28'
+          viewBox='0 0 24 24'
+          xmlns='http://www.w3.org/2000/svg'
+          ><path
+            d='m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6q0-.425.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.712-.288T16 16z'
+          ></path></svg
+        ></a
+      >
+      <a
+        href='/cottages'
+        class='flex items-center h-max justify-center w-max gap-[.4vw] px-[2vh] py-[2vh] active:fill-[#fff9] active:scale-[.9] active:text-[#fff9] fill-[#fff9]'
+        ><svg height='32' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'
+          ><path
+            d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+            fill='#ffd'></path></svg
+        >Cottages<svg
+          height='28'
+          viewBox='0 0 24 24'
+          xmlns='http://www.w3.org/2000/svg'
+          ><path
+            d='m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6q0-.425.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.712-.288T16 16z'
+          ></path></svg
+        ></a
+      >
+    </div><div
+      class='flex h-max w-full justify-between flex-[1] py-[4vh] px-[8vw]'
+    >
+      <div
+        class='flex h-max flex-col justify-evenly text-[1.8vh] gap-[1.4vh] max-w-[60vw] text-[#fff]'
+      >
+        <p class='text-[#ffd]'>
+          #24, Topslip Road, Sethumadai Village, Anamalai Taluk, Pollachi,
+          Coimbatore, Tamilnadu. Pincode - 642133.
+        </p><a href='tel:+91 9894648555' class='text-[#ffd]'>+91 9894648555</a>
+      </div>
+    </div>
+  </div>
+  <section
+    class='flex items-center justify-between w-screen absolute h-[18vh] max-[990px:backdrop-blur-[8px] text-[#ececec] top-0 z-[99]'
+  >
+    <div
+      class='h-full w-full absolute z-[1] bg-gradient-to-b from-black via-black bg-opacity-[1]'
+    >
+    </div>
+    <div class='flex items-center h-full w-max pl-[6vw]'>
+      <button
+        id='openBtnMOB'
+        class='text-[1.8vh] z-[9] bg-inherit border-[#fff] border-[.4vh] duration-[.3s] ease-in-out font-[500] font-[600] hover:border-[#BEB0A7] hover:text-[#BEB0A7] max-[990px]:px-[2.4vw] max-[990px]:py-[1vh] px-[1.8vw] py-[1.4vh] rounded-sm shadow-3xl text-[#fff] tracking-[.2vw]'
+        >MENU</button
+      >
+    </div>
+    <div
+      class='flex flex-col items-center justify-center gap-[.2vh] h-max w-max items-end pt-[4vh] z-[9]'
+    >
+      <a href='/'>
+        <Image
+          alt='logo'
+          class='h-[18vh] object-contain w-max'
+          decoding='async'
+          loading='eager'
+          src={Logo}
+        /></a
+      >
+      <span class='text-[1.4vh] font-[500]'
+        >Sethumadai | Pollachi | Coimbatore</span
+      >
+    </div>
+    <div class='flex h-max w-max items-end pr-[6vw]'>
+      <a
+        onclick="return gtag_report_conversion('https:/wa.link/y13k8n');"
+        href='https://wa.link/y13k8n'
+        class='convBTN text-[1.8vh] bg-inherit z-[9] border-[#fff] border-[.4vh] duration-[.3s] ease-in-out font-[500] font-[600] hover:border-[#BEB0A7] hover:text-[#fff] max-[990px]:px-[2.4vw] max-[990px]:py-[1vh] px-[1.8vw] py-[1.4vh] rounded-sm shadow-3xl text-[#fff] tracking-[.2vw]'
+        target='_blank'>BOOK</a
+      >
+    </div>
+  </section>
+</Mobile>
+<script>
+  import gsap from "gsap";
+
+  const openMenuBTN = document.getElementById("openBtnMOB");
+  const closeMenuBTN = document.querySelector(".closeBtnMOB");
+  function openMenu() {
+    gsap.to(".menuPageMOB", {
+      autoAlpha: 1,
+      duration: 0.2,
+      ease: "power4.in",
+    });
+  }
+  function closeMenu() {
+    gsap.to(".menuPageMOB", {
+      autoAlpha: 0,
+      duration: 0.2,
+      ease: "power4.out",
+    });
+  }
+
+  openMenuBTN.addEventListener("click", openMenu);
+  closeMenuBTN.addEventListener("click", closeMenu);
+</script>

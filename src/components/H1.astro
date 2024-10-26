@@ -1,0 +1,16 @@
+---
+const { h1 } = Astro.props;
+---
+
+<!-- PC -->
+<div class='max-[990px]:hidden h-max w-max pl-[4vw] pr-[1vw]'>
+  <span class=`text-[3.2vw] max-w-[60vw] inline-block`>
+    {h1}
+  </span>
+</div>
+<!-- MOB -->
+<div class='min-[990px]:hidden h-max w-full pl-[2.8vw] pr-[2vw]'>
+  <h1 class=`text-[5.2vh] max-w-[90vw] inline-block leading-[6.8vh]`>
+    {h1}
+  </h1>
+</div>

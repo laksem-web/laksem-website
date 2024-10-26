@@ -1,0 +1,129 @@
+---
+import Page from "../layouts/Page.astro";
+
+//
+import SocialsMOB from "./../components/MOBILE/Socials-M.astro";
+
+import NavBarMOB from "./../components/MOBILE/NavBar-M.astro";
+
+import HeroMOB from "../components/MOBILE/Hero-M.astro";
+import AboutMOB from "../components/MOBILE/About-M.astro";
+import PackagesMOB from "../components/MOBILE/Packages-M.astro";
+import TestimonialsMOB from "../components/MOBILE/Testimonials-M.astro";
+import FooterMOB from "./../components/MOBILE/Footer-M.astro";
+
+//
+import SocialsPC from "./../components/PC/Socials-P.astro";
+
+import NavBarPC from "../components/PC/NavBar-P.astro";
+import HeroPC from "../components/PC/Hero-P.astro";
+import AboutPC from "../components/PC/About-P.astro";
+import FooterPC from "./../components/PC/Footer-P.astro";
+import PackagesPC from "../components/PC/Packages-P.astro";
+import TestimonialsPC from "../components/PC/Testimonials-P.astro";
+//
+
+import FAQMOB from "../components/MOBILE/FAQ-M.astro";
+import FAQPC from "../components/PC/FAQ-P.astro";
+import FloatingBarMOB from "../components/MOBILE/FloatingBar-M.astro";
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <!-- GA 4 -->
+    <!-- Google tag (gtag.js) -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-1L4NTNJ7BV'
+    ></script>
+    <script type='text/partytown'>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-1L4NTNJ7BV");
+    </script>
+    <!-- Google Tag Manager -->
+    <script type='text/partytown'>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MHG56D4J");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Hotjar Tracking Code for https://laksemfarmstay.com/ -->
+    <script type='text/partytown'>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 4977853, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Down to Earth Farmstay: Eco-Friendly Retreat in Pollachi</title>
+    <link rel='sitemap' href='/sitemap.xml' />
+    <link href='/icon2.webp' rel='icon' type='image/svg+xml' />
+    <link href='https://laksemfarmstay.com/' rel='canonical' />
+    <meta
+      name='description'
+      content=`Visit Down to Earth Farmstay in Pollachi! It's awesome for families. You'll love the coconut trees and feeling relaxed. Book now for a peaceful getaway!`
+    />
+    <meta
+      name='keywords'
+      content=`Visit Down to Earth Farmstay in Pollachi! It's awesome for families. You'll love the coconut trees and feeling relaxed. Book now for a peaceful getaway!`
+    />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src='https://www.googletagmanager.com/ns.html?id=GTM-MHG56D4J'
+        height='0'
+        width='0'
+        style='display:none;visibility:hidden'></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
+    <section class='min-[990px]:hidden h-max max-w-[100vw]'>
+      <FloatingBarMOB />
+      <!-- <SocialsMOB /> -->
+      <NavBarMOB />
+      <section class='h-max w-max pt-[20vh]'>
+        <HeroMOB />
+      </section>
+      <AboutMOB location='Pollachi' />
+      <PackagesMOB location='Pollachi' />
+      <TestimonialsMOB location='Pollachi' />
+      <!-- <FAQMOB /> -->
+      <FooterMOB />
+    </section>
+
+    <section
+      class='max-[990px]:hidden h-max max-w-[100vw] overflow-x-hidden relative'
+    >
+      <!-- <SocialsPC /> -->
+      <NavBarPC />
+      <HeroPC location='Pollachi' />
+      <AboutPC location='Pollachi' />
+      <PackagesPC location='Pollachi' />
+      <TestimonialsPC location='Pollachi' />
+      <!-- <FAQPC /> -->
+      <FooterPC />
+    </section>
+  </body>
+</html>

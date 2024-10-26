@@ -1,0 +1,277 @@
+---
+import { Image } from "astro:assets";
+import Desktop from "../../layouts/Desktop.astro";
+import cottageIMG from "./../../assets/cottageIMG.webp";
+import FoodIMG from "./../../assets/FoodIMG.webp";
+
+const { location } = Astro.props;
+---
+
+<Desktop>
+  <div
+    class='flex items-center select-none h-max justify-center flex-col relative w-screen bg-gradient-to-b border-[#999] border-b-[1px] from-[#3B1F1F] to-[#F8F2DC] gap-[16vh] pb-[24vh] pt-[8vh]'
+  >
+    <div
+      class='flex items-center h-max justify-center flex-col w-full gap-[1.8vh] pt-[4vh]'
+    >
+      <span
+        class='font-[500] text-[6vh] text-[#F2FDFF] text-center leading-[7vh]'
+      >
+        Rustic Luxury: Resorts in {location} <br /> for Couples & Families</span
+      >
+      <span class='text-[2vh] text-[#fff9]'
+        >These are the packages we provide</span
+      >
+    </div>
+    <div
+      class='flex items-center h-max justify-between flex-col gap-[12vh] px-[4vw] w-screen'
+    >
+      <div class='h-max w-max max-[990px]:hidden'>
+        <div
+          class='flex items-center h-max justify-center relative w-screen shadow-3xl'
+        >
+          <div
+            class='relative overflow-hidden shadow-xl h-[54vh] rounded-l-[12px] w-[35%]'
+          >
+            <div
+              class='absolute to-[rgba(0,0,0,0)] z-[] bg-gradient-to-t bottom-0 h-full w-full from-[#636C80] opacity-[.4]'
+            >
+            </div><span
+              class='text-white absolute z-[99] text-[3.8vh] bottom-[4vh] left-[2vw] text-[4.8vh]'
+              >Deluxe Cottage</span
+            ><Image
+              alt='Deluxe Cottages by "Down to Earth" by Laksem Situated in sethumadai, pollachi, coimbatore. It is good for families and couples'
+              class='h-full w-full object-cover z-[-2]'
+              decoding='async'
+              height='960'
+              loading='lazy'
+              src={cottageIMG}
+            />
+          </div><div
+            class='flex pt-[4vh] flex-col overflow-hidden px-[2vw] shadow-xl to-[#833F11] z-[99] from-[#2C1709] via-[#481B0A] bg-gradient-to-r gap-[3.4vh] h-[54vh] rounded-r-[12px] w-[55%]'
+          >
+            <div
+              class='flex flex items-center w-full justify-between px-[2vw] text-[white] h-[30%]'
+            >
+              <span
+                class='flex h-max flex-col w-max font-[500] items-start text-[3.6vh] gap-[2vh]'
+              >
+                <span class='text-[2.2vh]'>
+                  Summer Discounts:<span class='text-[2.2vh]'>
+                    &#8377;2000 OFF</span
+                  >
+                </span>
+                <span
+                  class='flex items-center gap-[1vw] text-[3.4vh] font-[500]'
+                  >Price:<span class='line-through text-[2.4vh] text-[#ececec]'
+                    >&#8377;7000</span
+                  >&#8377;5000</span
+                >
+              </span><div
+                class='flex items-center h-max w-max flex-col gap-[3vh]'
+              >
+                <div class='flex h-max w-max font-[500]'>
+                  2<svg
+                    height='20'
+                    viewBox='0 0 24 24'
+                    xmlns='http://www.w3.org/2000/svg'
+                    ><path
+                      d='M10 14q-1.25 0-2.125-.875T7 11q0-.55.175-1.037t.525-.888q-.1-.25-.15-.525T7.5 8q0-.95.513-1.687T9.35 5.225q.5-.575 1.175-.9T12 4q.8 0 1.475.325t1.175.9q.825.35 1.338 1.088T16.5 8q0 .275-.05.55t-.15.525q.35.4.525.888T17 11q0 1.25-.875 2.125T14 14zm-6 8v-2.8q0-.85.438-1.562T5.6 16.55q1.55-.775 3.15-1.162T12 15q1.65 0 3.25.388t3.15 1.162q.725.375 1.163 1.088T20 19.2V22z'
+                      fill='#fff'></path></svg
+                  >&nbsp; per night
+                </div><div
+                  class='flex items-center h-max w-max gap-[1vw] text-[2.4vh]'
+                >
+                  <span>Extra</span>
+                  <svg
+                    height='20'
+                    viewBox='0 0 24 24'
+                    xmlns='http://www.w3.org/2000/svg'
+                    ><path
+                      d='M22 11v9h-2v-3H4v3H2V4h2v10h8V7h6a4 4 0 0 1 4 4M8 13a3 3 0 1 1 0-6a3 3 0 0 1 0 6'
+                      fill='#fff'></path></svg
+                  >
+                  <span>for + &#8377;1000</span>
+                </div>
+              </div>
+            </div><div
+              class='flex text-white flex-col gap-[1vh] w-full h-[60%]'
+            >
+              <span class='flex items-center text-[2.2vh]'
+                ><svg
+                  height='20'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                  ><path
+                    d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                    fill='white'></path></svg
+                >Advance payment: 50% of cottage rent.</span
+              >
+              <span class='flex items-center text-[2.2vh]'
+                ><svg
+                  height='20'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                  ><path
+                    d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                    fill='white'></path></svg
+                >Check-in & Check-out: 12 noon.</span
+              >
+              <span class='flex items-center text-[2.2vh]'
+                ><svg
+                  height='20'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                  ><path
+                    d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                    fill='white'></path></svg
+                >Children below 10 years: No Charges</span
+              >
+              <span class='flex items-center text-[2.2vh]'
+                ><svg
+                  height='20'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                  ><path
+                    d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                    fill='white'></path></svg
+                >Prices are exclusive of taxes.</span
+              >
+              <span class='flex items-center text-[2.2vh]'
+                ><svg
+                  height='20'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                  ><path
+                    d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                    fill='white'></path></svg
+                > GST: 12% applicable for cottages & Food.</span
+              >
+            </div><div
+              class='flex px-[4vw] w-full border-[#fff9] justify-between border-t-[1px] h-[30%] pb-[2vh]'
+            >
+              <a
+                href='/cottages'
+                class='flex items-center justify-center py-[2vh] block text-[2vh] text-white w-1/2 font-[600]'
+                >AMMENITIES</a
+              >
+              <a
+                href='https://wa.link/y13k8n'
+                class='convBTN flex items-center justify-center py-[2vh] block text-[2vh] text-white w-1/2 border-[#fff9] px-[2.8vw] py-[1vh] border-l-[1px] font-[600]'
+                >BOOK NOW</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='h-max w-max max-[990px]:hidden'>
+        <div
+          class='flex items-center h-max justify-center relative w-screen shadow-3xl'
+        >
+          <div
+            class='relative overflow-hidden shadow-xl h-[54vh] rounded-l-[12px] w-[35%]'
+          >
+            <div
+              class='absolute to-[rgba(0,0,0,0)] z-[] bg-gradient-to-t bottom-0 h-full w-full from-[#636C80] opacity-[.4]'
+            >
+            </div><span
+              class='text-white absolute z-[99] bottom-[4vh] left-[2vw] text-[4.8vh] z-[1]'
+              >Home Food</span
+            ><Image
+              alt='HomeFood at "Down to Earth" Farmstay by Laksem, enjoy delicious Naadan cuisine with your family and friends'
+              class='h-full w-full object-cover z-[-2]'
+              decoding='async'
+              loading='lazy'
+              src={FoodIMG}
+            />
+          </div><div
+            class='flex pt-[4vh] flex-col overflow-hidden px-[2vw] shadow-xl to-[#833F11] z-[99] from-[#2C1709] via-[#481B0A] bg-gradient-to-r gap-[3.4vh] h-[54vh] rounded-r-[12px] w-[55%]'
+          >
+            <div
+              class='flex flex items-center w-full text-[white] h-[30%] justify-start px-[0.8vw]'
+            >
+              <div class='h-max w-max'>
+                <span class='flex items-center text-[4vh] gap-[.4vw]'
+                  >Starting From &nbsp;₹ 140 / <svg
+                    height='20'
+                    viewBox='0 0 24 24'
+                    xmlns='http://www.w3.org/2000/svg'
+                    ><path
+                      d='M10 14q-1.25 0-2.125-.875T7 11q0-.55.175-1.037t.525-.888q-.1-.25-.15-.525T7.5 8q0-.95.513-1.687T9.35 5.225q.5-.575 1.175-.9T12 4q.8 0 1.475.325t1.175.9q.825.35 1.338 1.088T16.5 8q0 .275-.05.55t-.15.525q.35.4.525.888T17 11q0 1.25-.875 2.125T14 14zm-6 8v-2.8q0-.85.438-1.562T5.6 16.55q1.55-.775 3.15-1.162T12 15q1.65 0 3.25.388t3.15 1.162q.725.375 1.163 1.088T20 19.2V22z'
+                      fill='#fff'></path></svg
+                  ></span
+                >
+              </div>
+            </div><div
+              class='flex text-white flex-col gap-[1vh] w-full rules h-[60%]'
+            >
+              <span class='flex items-center text-[2.2vh] font-[500]'
+                ><svg
+                  height='20'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                  ><path
+                    d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                    fill='white'></path></svg
+                > Popular Choice.</span
+              >
+              <span class='flex items-center text-[2.2vh] font-[500]'
+                ><svg
+                  height='20'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                  ><path
+                    d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                    fill='white'></path></svg
+                > Our Traditional Food.</span
+              >
+              <span class='flex items-center text-[2.2vh] font-[500]'
+                ><svg
+                  height='20'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                  ><path
+                    d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                    fill='white'></path></svg
+                >Available in VEG & Non-VEG.</span
+              >
+              <span class='flex items-center text-[2.2vh] font-[500]'
+                ><svg
+                  height='20'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                  ><path
+                    d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                    fill='white'></path></svg
+                > Tea / Coffee / Snacks Available.</span
+              >
+              <span class='flex items-center text-[2.2vh] font-[500]'
+                ><svg
+                  height='20'
+                  viewBox='0 0 24 24'
+                  xmlns='http://www.w3.org/2000/svg'
+                  ><path
+                    d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                    fill='white'></path></svg
+                >Prices are exclusive of taxes.(GST: 12%)</span
+              >
+            </div><div
+              class='flex px-[4vw] w-full border-[#fff9] justify-between border-t-[1px] h-[20%]'
+            >
+              <a
+                href='tel:+91 9894648555'
+                class='flex items-center justify-center py-[2vh] block text-[2vh] text-white w-1/2 font-[600]'
+                >CALL NOW</a
+              >
+              <a
+                href='https://wa.link/y13k8n'
+                class='convBTN flex items-center justify-center py-[2vh] block text-[2vh] text-white w-1/2 border-[#fff9] px-[2.8vw] py-[1vh] border-l-[1px] font-[600]'
+                >BOOK NOW</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Desktop>

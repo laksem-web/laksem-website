@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+
+const { img, heading, desc } = Astro.props;
+---
+
+<div
+  class='flex h-max flex-col gap-[2vh] items-start max-[990px]:w-[80vw] px-[3.8vw] py-[2.4vh] w-[24vw]'
+>
+  <Image
+    alt='fresh-air-icon'
+    class='object-contain h-[12vh] w-auto'
+    decoding='async'
+    loading='lazy'
+    src={img}
+  />
+  <h2 class='text-white'>{heading}</h2>
+  <p class='text-[#fff9]'>
+    {desc}
+  </p>
+</div>

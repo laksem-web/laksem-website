@@ -1,0 +1,135 @@
+---
+import BlogPage from "../../layouts/BlogPage.astro";
+import Post from "../../components/Post.astro";
+import NavBarPC from "../../components/PC/NavBar-P.astro";
+import NavBarMOB from "../../components/MOBILE/NavBar-M.astro";
+import FooterPC from "../../components/PC/Footer-P.astro";
+import FooterMOB from "../../components/MOBILE/Footer-M.astro";
+import H1 from "./../../components/H1.astro";
+import H2 from "./../../components/H2.astro";
+import H3 from "./../../components/H3.astro";
+import P from "../../components/P.astro";
+import { Image } from "astro:assets";
+
+import img from "./../../assets/gallery/img29.webp";
+---
+
+<BlogPage
+  title=`Experience Valparai Farmstays: Nature Beyond Resorts`
+  desc=`Escape the ordinary and connect with nature at Down to Earth Farmstay in Valparai. Enjoy authentic experiences, stunning landscapes, and personalized service. Book your nature retreat today!`
+  canonical=`https://laksemfarmstay.com/blogs/why-farmstays-and-not-resorts`
+  fromBG=''
+  viaBG=''
+  toBG=''
+  textCLR=''
+>
+  <NavBarMOB />
+  <NavBarPC />
+  <!-- d/ -->
+  <section
+    class='h-max w-full overflow-x-hidden flex flex-col gap-[8vh] min-[990px]:py-[16vh] pt-[24vh]'
+  >
+    <div class='h-max w-max flex flex-col gap-[2vh]'>
+      <H1
+        h1=`Escape Resorts: Find the Real Nature through the Valparai Farmstays`
+      />
+      <P
+        p=`Looking for an authentic break from the traditional resort experience in Valparai? If luxury stays have left you craving a deeper connection with nature, it’s time to explore farmstays. `
+      />
+      <P
+        p=`At Down to Earth Farmstay by Laksem, we offer a unique opportunity to immerse yourself in Valparai's serene landscapes and rich culture. Discover how our farmstay provides a genuine nature experience that goes beyond the usual resort stay.`
+      />
+    </div>
+    <div
+      class='h-max w-full min-[990px]:w-[40%] px-[2vw] min-[990px]:px-[4vw] relative'
+    >
+      <!-- IMAGE -->
+      <div
+        class='h-max w-full border-[1.5px] rounded-md pt-[2svh] min-[990px]:hidden min-[990px]:px-[1vw] px-[2vw] border-[#fff5] overflow-hidden flex flex-col items-between justify-between gap-[2svh]'
+      >
+        <Image
+          alt='Rooms at Deluxe Cottage at Down To Earth Farmstay by Laksem, Pollachi'
+          class='rounded-sm h-[32svh] object-cover'
+          decoding='async'
+          loading='lazy'
+          src={img}
+        />
+        <div class='h-max w-full flex flex-col items-start gap-[.4vh]'>
+          <p class='text-[#e8e8e8] text-[2.8vh]'>Deluxe Cottages</p>
+          <p class='text-[#fff9] text-[2vh]'></p>
+          Down To Earth Farmstay by Laksem
+        </div>
+        <a
+          class='w-max block text-center pb-[1vh] text-blue-800 text-[2vh] font-[500] underline underline-offset-[.5vh]'
+          href='/'>View Details</a
+        >
+      </div>
+    </div>
+    <div class='h-max w-max flex flex-col gap-[2vh]'>
+      <H2 h2=`Why Farmstays and Not Resorts?
+` />
+      <P
+        p=`Valparai is renowned for its breathtaking landscapes, but the conventional resort experience often falls short in capturing the essence of the region. Farmstays offer a deeper, more intimate connection with nature and local culture. Here's why Down to Earth Farmstay by Laksem stands out:`
+      />
+    </div>
+    <div class='h-max w-max flex flex-col gap-[2vh]'>
+      <H3 h3=`Closer to Nature:` />
+      <P
+        p=`At Down to Earth Farmstay, you’re right in the heart of Valparai's lush tea plantations and rolling hills. Imagine waking up to the melodious chirping of birds and savoring a steaming cup of coffee while soaking in panoramic green vistas.`
+      />
+    </div>
+    <div class='h-max w-max flex flex-col gap-[2vh]'>
+      <H3 h3=`Authentic Experiences:` />
+      <P
+        p=`Our farmstay offers hands-on experiences such as coconut farm tours, and cooking using local ingredients. These activities provide a genuine insight into the regional culture and traditions, making your stay both memorable and enriching.`
+      />
+    </div>
+    <div class='h-max w-max flex flex-col gap-[2vh]'>
+      <H3 h3=`Personalized Service:` />
+      <P
+        p=`Unlike crowded resorts, our farmstay provides a more intimate experience with personalized service. Our hosts at Down to Earth Farmstay by Laksem ensure you feel welcome and well cared for, offering a bespoke experience that meets your specific needs.`
+      />
+    </div>
+    <div class='h-max w-max flex flex-col gap-[2vh]'>
+      <H3 h3=`Sustainable Tourism:` />
+      <P
+        p=`We are committed to sustainable tourism and eco-friendliness. Staying at Down to Earth Farmstay supports local farmers and promotes environmental conservation, aligning with the growing trend towards responsible tourism.`
+      />
+    </div>
+    <div class='h-max w-max flex flex-col gap-[2vh] pb-[4vh]'>
+      <H2 h2=`Frequently Asked Questions` />
+      <H3
+        h3=`1. What are the benefits of staying at a farmstay compared to a resort?
+`
+      />
+      <P
+        p=`- Farmstays like Down to Earth Farmstay offer a unique, immersive experience that resorts often lack. You engage directly with farming activities, enjoy local produce, and experience a more sustainable lifestyle. This direct interaction with nature and local culture provides a richer, more authentic vacation experience.`
+      />
+      <H3 h3=`2. Are farmstays in Valparai suitable for families?` />
+      <P
+        p=`- Yes, farmstays are perfect for families. At Down to Earth Farmstay, children can enjoy activities like feeding farm animals, exploring the farm, and learning about agriculture. Our safe, clean environment ensures a memorable experience for the whole family.`
+      />
+      <H3 h3=`3. How do I find the best farmstay in Valparai?` />
+      <P
+        p=`- To find the best farmstay, consider factors such as location, amenities, and guest reviews. Down to Earth Farmstay by Laksem is highly rated for its picturesque setting, comfortable accommodations, and engaging activities. Check their respective websites for more detailed info.`
+      />
+      <H3
+        h3=`4. What should I expect in terms of accommodation and facilities?`
+      />
+      <P
+        p=`- Farmstay accommodations vary from basic to luxurious. At Down to Earth Farmstay, you can expect cozy, well-maintained rooms with calmn and coolness of our cob-made cottages. We offer shared dining areas, and activities that enhance your experience of Valparai’s natural beauty.`
+      />
+    </div>
+    <div class='h-max w-max pt-[4vh] pb-[3vh] flex flex-col gap-[2vh]'>
+      <H2 h2=`Conclusion` />
+      <P
+        p=`For a holiday that truly connects you with nature and local culture, Down to Earth Farmstay by Laksem is your ideal choice. Move beyond the conventional resort experience and embrace the authentic charm of Valparai through our farmstay.`
+      />
+      <P
+        p=`Enjoy stunning landscapes, enriching local experiences, and personalized service that makes your stay memorable. Book your escape today and experience Valparai like never before.`
+      />
+    </div>
+  </section>
+  <FooterPC />
+  <FooterMOB />
+</BlogPage>

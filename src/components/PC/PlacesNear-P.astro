@@ -1,0 +1,129 @@
+---
+import { Image } from "astro:assets";
+import Desktop from "../../layouts/Desktop.astro";
+
+import TopSlip from "./../../assets/attractions/topSlip.webp";
+import Valparai from "./../../assets/attractions/valparaiEstates.webp";
+import MonkeyFalls from "./../../assets/attractions/monkeyFalls.webp";
+import AliyarDam from "./../../assets/attractions/aliyarDam.webp";
+import sholayarDam from "./../../assets/attractions/sholayarDam.webp";
+---
+
+<Desktop>
+  <div class='h-max flex flex-col w-screen gap-[2vh] pt-[6vh] px-[6.2vw]'>
+    <span class='text-[#f1eec8] text-[4.2vh]'>Places Near to Visit:</span>
+  </div>
+  <div
+    class='h-max flex flex-col items-center gap-[10.4vh] pb-[16vh] pt-[12vh] px-[6vw] py-[2vh] text-[#ececec] text-[2.4vh] w-screen'
+  >
+    <div class='h-max flex justify-between w-max gap-[2vw]'>
+      <div
+        class='h-max flex items-center w-full justify-between backdrop-blur-lg rounded-lg z-[1] bg-[#281707] shadow-xl'
+      >
+        <div class='h-max rounded-lg w-[20vw]'>
+          <Image
+            alt='near Top Slip Tiger Reserve'
+            class='object-cover w-full h-[28vh]'
+            decoding='async'
+            height='184'
+            loading='lazy'
+            src={TopSlip}
+            width='274'
+          />
+        </div>
+        <div class='h-max flex flex-col items-start pl-[2vw] w-[20vw]'>
+          <a href='https://maps.app.goo.gl/qDoMPYzodatadg6H6' target='_blank'>
+            <span>Topslip reserve forest</span>
+          </a>
+          <span class='text-[1.8vh] text-[#fff9]'>National park</span>
+        </div>
+      </div>
+      <div
+        class='h-max flex items-center w-full justify-between backdrop-blur-lg rounded-lg z-[1] bg-[#281707] shadow-xl'
+      >
+        <div class='h-max rounded-lg w-[20vw]'>
+          <Image
+            alt='near Aliyar Dam'
+            class='object-cover w-full h-[28vh]'
+            decoding='async'
+            height='163'
+            loading='lazy'
+            src={AliyarDam}
+            width='308'
+          />
+        </div>
+        <div class='h-max flex flex-col items-start pl-[2vw] w-[20vw]'>
+          <a href='https://maps.app.goo.gl/wKqrfwWCirxP6LHw7' target='_blank'>
+            <span>Aliyar dam</span>
+          </a>
+          <span class='text-[1.8vh] text-[#fff9]'>Dam</span>
+        </div>
+      </div>
+    </div>
+    <div class='h-max flex justify-between w-max gap-[2vw]'>
+      <div
+        class='h-max flex items-center w-full justify-between backdrop-blur-lg rounded-lg z-[1] bg-[#281707] shadow-xl'
+      >
+        <div class='h-max rounded-lg w-[20vw]'>
+          <Image
+            alt='near MonkeyFalls'
+            class='object-cover w-full h-[28vh]'
+            decoding='async'
+            height='217'
+            loading='lazy'
+            src={MonkeyFalls}
+            width='232'
+          />
+        </div>
+        <div class='h-max flex flex-col items-start pl-[2vw] w-[20vw]'>
+          <a href='https://maps.app.goo.gl/tFQq2fXmSNSF3G4i6' target='_blank'
+            ><span>Monkey Falls</span>
+          </a>
+          <span class='text-[1.8vh] text-[#fff9]'>Waterfalls</span>
+        </div>
+      </div>
+      <div
+        class='h-max flex items-center justify-between backdrop-blur-lg rounded-lg z-[1] bg-[#281707] shadow-xl w-max'
+      >
+        <div class='h-max rounded-lg w-[20vw]'>
+          <Image
+            alt='near Valparai Tea Estate'
+            class='object-cover w-full h-[28vh]'
+            decoding='async'
+            height='239'
+            loading='lazy'
+            src={Valparai}
+            width='210'
+          />
+        </div>
+        <div class='h-max flex flex-col items-start pl-[2vw] w-[20vw]'>
+          <a href='https://maps.app.goo.gl/CqSq7175xSEKMmcNA' target='_blank'>
+            <span>Valparai tea estates</span>
+          </a>
+          <span class='text-[1.8vh] text-[#fff9]'>Tea Estate</span>
+        </div>
+      </div>
+    </div>
+    <div
+      class='h-max flex items-center justify-between backdrop-blur-lg rounded-lg z-[1] bg-[#281707] shadow-xl w-max mx-auto'
+    >
+      <div class='h-max rounded-lg w-[20vw]'>
+        <Image
+          alt='near sholayarDam'
+          class='object-cover w-full h-[28vh]'
+          decoding='async'
+          height='178'
+          loading='lazy'
+          src={sholayarDam}
+          width='283'
+        />
+      </div>
+      <div class='h-max flex flex-col items-start pl-[2vw] w-[20vw]'>
+        <a href='https://maps.app.goo.gl/boKHBdzpBUZiATE67' target='_blank'>
+          <span>Sholayar Dam</span>
+        </a>
+        <span class='text-[1.8vh] text-[#fff9]'>Dam</span>
+      </div>
+    </div>
+  </div>
+</Desktop>

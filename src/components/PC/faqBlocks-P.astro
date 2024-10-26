@@ -1,0 +1,21 @@
+---
+const { no, qst, ans } = Astro.props;
+---
+
+<div class='h-[20vh] w-[30vw] flex bg-[#ececec] shadow-xl rounded-md'>
+  <div class='flex items-start justify-center py-[2vh] px-[1vw]'>
+    <span class='rounded-[100px] bg-[#eec] px-[.8vw] py-[1vh] text-[2vh]'
+      >{no}</span
+    >
+  </div>
+  <div
+    class='h-full w-full flex flex-col items-start justify-center py-[2vh] px-[1vw] gap-[1vh]'
+  >
+    <div class='qst font-[600] text-[2.8vh]'>
+      <span>{qst}</span>
+    </div>
+    <div class='ans text-[#555] text-[2.4vh]'>
+      <span>{ans}</span>
+    </div>
+  </div>
+</div>

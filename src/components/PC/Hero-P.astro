@@ -1,0 +1,46 @@
+---
+import Desktop from "../../layouts/Desktop.astro";
+import { Image } from "astro:assets";
+import HeroPC from "./../../assets/heroPC.webp";
+
+const { location } = Astro.props;
+---
+
+<Desktop>
+  <div class='h-max w-screen max-w-[100vw] overflow-x-hidden'>
+    <div class='absolute top-0 top-0 w-screen h-screen overflow-hidden z-[-1]'>
+      <Image
+        alt='Cottage Balcony View'
+        class='h-full w-full object-cover heroPC'
+        decoding='async'
+        loading='lazy'
+        src={HeroPC}
+      /><div
+        class='absolute top-0 w-screen h-screen bg-gradient-to-b from-[rgba(0,0,0,0)] opacity-[.6] overlayBG-MOB to-[#562636] via-[#000] z-[2]'
+      >
+      </div>
+    </div><div class='h-[80vh] w-screen pt-[8vh] pl-[4vw]'>
+      <div class='flex h-max flex-col w-full gap-[2vh]'>
+        <span
+          class='font-[500] bg-clip-text inline-block text-transparent from-[#fff] leading-[7.8vh] bg-gradient-to-r ml-[4vw] mt-[5.8vh] text-[3.8vw] to-[#ffefef]'
+          >Family-Friendly Eco Retreat<br />at Down to Earth Farmstay</span
+        ><div class='flex h-max flex-col pr-[12vw] gap-[2vh] pl-[4vw] w-[75%]'>
+          <span class='font-[500] text-[2.4vh] text-[#ffefef] tracking-[.2vw]'
+            >Farm Stay Situated in {location}</span
+          ><div
+            class='h-max w-max py-[2vh] backdrop-blur-[px] bg-[rgba(0,0,0,0)] bg-opacity-[1] rounded-md'
+          >
+            <p
+              class='h-max z-[99] font-[500] mr-[4vw] text-[#ffefef] text-[3vh] tracking-[.1vw] w-[42vw]'
+            >
+              Nestled among Anaimalai, Topslip & Parambikulam, this eco-cottage
+              harmoniously integrates with coconut groves, providing a serene
+              retreat for families. Conveniently located near Pollachi &
+              Coimbatore, it offers an idyllic escape amidst lush plantations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Desktop>

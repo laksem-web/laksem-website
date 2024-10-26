@@ -1,0 +1,132 @@
+---
+import { Image } from "astro:assets";
+import Mobile from "../../layouts/Mobile.astro";
+
+import TopSlip from "./../../assets/attractions/topSlip.webp";
+import Valparai from "./../../assets/attractions/valparaiEstates.webp";
+import ValparaiHills from "./../../assets/attractions/valaparai-hillls.jpeg";
+import MonkeyFalls from "./../../assets/attractions/monkeyFalls.webp";
+import AliyarDam from "./../../assets/attractions/aliyarDam.webp";
+import sholayarDam from "./../../assets/attractions/sholayarDam.webp";
+---
+
+<Mobile>
+  <section class='h-max w-screen min-[990px]:hidden'>
+    <div class='h-max flex flex-col gap-[.4vh] w-full pt-[4vh] px-[5.2vw]'>
+      <h2 class='font-[500] text-[3.4vh] text-[#F0EEC8]'>
+        Places Near to Visit:
+      </h2>
+      <p class='text-[#fff9] w-[85%] leading-[2.8vh]'>
+        Discover attractions near Down To Earth by Laksem, All just a short trip
+        away!
+      </p>
+    </div>
+
+    <div
+      class='h-max flex flex-col w-full text-[2.4vh] gap-[3.4vh] px-[6vw] py-[6vh] text-[#000]'
+    >
+      <div
+        class='h-max flex items-center w-full justify-between backdrop-blur-lg rounded-lg z-[1] bg-[#fff9]'
+      >
+        <div class='h-max rounded-lg w-[32vw]'>
+          <Image
+            alt='near Valparai Tea Estate'
+            class='object-cover w-full h-[12vh]'
+            decoding='async'
+            src={Valparai}
+            loading='lazy'
+          />
+        </div><div class='h-max flex flex-col items-start pl-[2vw] w-[60vw]'>
+          <a href='https://maps.app.goo.gl/CqSq7175xSEKMmcNA' target='_blank'
+            ><h3>Valparai Hills</h3></a
+          ><span class='text-[1.8vh] text-[#333]'>Mountain Pass</span>
+        </div>
+      </div>
+      <div
+        class='h-max flex items-center w-full justify-between backdrop-blur-lg rounded-lg z-[1] bg-[#fff9]'
+      >
+        <div class='h-max rounded-lg w-[32vw]'>
+          <Image
+            alt='near Top Slip Tiger Reserve'
+            class='object-cover h-[12vh] w-max'
+            decoding='async'
+            src={TopSlip}
+            loading='lazy'
+          />
+        </div><div class='h-max flex flex-col items-start pl-[2vw] w-[60vw]'>
+          <a href='https://maps.app.goo.gl/qDoMPYzodatadg6H6' target='_blank'
+            ><h3>Topslip reserve forest</h3></a
+          ><span class='text-[1.8vh] text-[#333]'>National park</span>
+        </div>
+      </div><div
+        class='h-max flex items-center w-full justify-between backdrop-blur-lg rounded-lg z-[1] bg-[#fff9]'
+      >
+        <div class='h-max rounded-lg w-[32vw]'>
+          <Image
+            alt='near Aliyar Dam'
+            class='object-cover w-full h-[12vh]'
+            decoding='async'
+            src={AliyarDam}
+            loading='lazy'
+          />
+        </div><div class='h-max flex flex-col items-start pl-[2vw] w-[60vw]'>
+          <a href='https://maps.app.goo.gl/wKqrfwWCirxP6LHw7' target='_blank'
+            ><h3>Aliyar dam</h3></a
+          ><span class='text-[1.8vh] text-[#333]'>Dam</span>
+        </div>
+      </div><div
+        class='h-max flex items-center w-full justify-between backdrop-blur-lg rounded-lg z-[1] bg-[#fff9]'
+      >
+        <div class='h-max rounded-lg w-[32vw]'>
+          <Image
+            alt='near MonkeyFalls'
+            class='object-cover w-full h-[12vh]'
+            decoding='async'
+            src={MonkeyFalls}
+            loading='lazy'
+          />
+        </div><div class='h-max flex flex-col items-start pl-[2vw] w-[60vw]'>
+          <a href='https://maps.app.goo.gl/tFQq2fXmSNSF3G4i6' target='_blank'
+            >Monkey Falls</a
+          >
+          <span class='text-[1.8vh] text-[#333]'>Waterfalls</span>
+        </div>
+      </div>
+
+      <div
+        class='h-max flex items-center w-full justify-between backdrop-blur-lg rounded-lg z-[1] bg-[#fff9]'
+      >
+        <div class='h-max rounded-lg w-[32vw]'>
+          <Image
+            alt='near Valparai Tea Estate'
+            class='object-cover w-full h-[12vh]'
+            decoding='async'
+            src={ValparaiHills}
+            loading='lazy'
+          />
+        </div><div class='h-max flex flex-col items-start pl-[2vw] w-[60vw]'>
+          <a href='https://maps.app.goo.gl/CqSq7175xSEKMmcNA' target='_blank'
+            ><h3>Valparai tea estates</h3></a
+          ><span class='text-[1.8vh] text-[#333]'>Tea Estate</span>
+        </div>
+      </div>
+      <div
+        class='h-max flex items-center w-full justify-between backdrop-blur-lg rounded-lg z-[1] bg-[#fff9]'
+      >
+        <div class='h-max rounded-lg w-[32vw]'>
+          <Image
+            alt='near sholayarDam'
+            class='object-cover w-full h-[12vh]'
+            decoding='async'
+            src={sholayarDam}
+            loading='lazy'
+          />
+        </div><div class='h-max flex flex-col items-start pl-[2vw] w-[60vw]'>
+          <a href='https://maps.app.goo.gl/boKHBdzpBUZiATE67' target='_blank'
+            ><h3>Sholayar Dam</h3></a
+          ><span class='text-[1.8vh] text-[#333]'>Dam</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</Mobile>

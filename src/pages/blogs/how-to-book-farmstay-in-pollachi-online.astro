@@ -1,0 +1,415 @@
+---
+import NavBarMOB from "../../components/MOBILE/NavBar-M.astro";
+import NavBarPC from "../../components/PC/NavBar-P.astro";
+import FooterMOB from "../../components/MOBILE/Footer-M.astro";
+import FooterPC from "../../components/PC/Footer-P.astro";
+import { Image } from "astro:assets";
+import Img from "./../../assets/gallery/img21.webp";
+import logo from "./../../assets/logo.webp";
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>
+      Easy Guide: Book Your Pollachi Farmstay Online in 5 Simple Steps
+    </title>
+    <meta
+      name='description'
+      content=`Learn how to effortlessly book your Pollachi farmstay online. Follow our 5-step guide for a hassle-free reservation process. Secure your rural retreat today!`
+    />
+  </head>
+  <body>
+    <section class='h-max max-w-[100vw] overflow-x-hidden relative'>
+      <div class='h-max w-max max-[990px]:hidden'>
+        <div
+          class='flex invisible flex-col bg-gradient-to-b fixed from-[#000] left-0 opacity-0 to-[#562636] top-0 via-[#3B1F1F] w-screen z-[999] h-[100vh] menuPagePC'
+        >
+          <div
+            class='flex h-max w-full justify-between py-[4vh] px-[6vw] flex-[.6]'
+          >
+            <div class='flex items-center h-full w-max pt-[2vh]'>
+              <a href='/'>
+                <Image
+                  alt='logo'
+                  class='object-contain w-max z-[1] h-[18vh]'
+                  decoding='async'
+                  loading='eager'
+                  src={logo}
+                /></a
+              >
+            </div><div
+              class='flex items-center justify-center flex-col w-max ease-in-out gap-[.8vh] h-full cursor-pointer duration-[.3s] fill-[#DCDDE0] hover:fill-[#FF4242] hover:scale-[1.3] hover:text-[#FF4242] menuCloseBTN_PC'
+            >
+              <svg
+                height='32'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                ><path
+                  d='m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275z'
+                ></path></svg
+              >
+            </div>
+          </div><div
+            class='flex font-[500] flex-col items-start flex-[3.6] h-full justify-evenly text-[#DCDDE0] text-[3vh] w-full px-[4vw]'
+          >
+            <a
+              href='/cottages'
+              class='flex items-center h-max justify-center w-max gap-[.4vw] px-[2vh] py-[2vh] duration-[.3s] ease-in-out fill-[#DCDDE0] hover:fill-[#FFD23F] hover:text-[#FFD23F] hover:translate-x-[4%]'
+              ><svg
+                height='32'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                ><path
+                  d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                ></path></svg
+              >Cottages<svg
+                height='28'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                ><path
+                  d='m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6q0-.425.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.712-.288T16 16z'
+                ></path></svg
+              ></a
+            ><a
+              href='/about'
+              class='flex items-center h-max justify-center w-max gap-[.4vw] px-[2vh] py-[2vh] duration-[.3s] ease-in-out fill-[#DCDDE0] hover:fill-[#FFD23F] hover:text-[#FFD23F] hover:translate-x-[4%]'
+              ><svg
+                height='32'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                ><path
+                  d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                ></path></svg
+              >About<svg
+                height='28'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                ><path
+                  d='m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6q0-.425.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.712-.288T16 16z'
+                ></path></svg
+              ></a
+            ><a
+              href='/gallery'
+              class='flex items-center h-max justify-center w-max gap-[.4vw] px-[2vh] py-[2vh] duration-[.3s] ease-in-out fill-[#DCDDE0] hover:fill-[#FFD23F] hover:text-[#FFD23F] hover:translate-x-[4%]'
+              ><svg
+                height='32'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                ><path
+                  d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                ></path></svg
+              >Gallery<svg
+                height='28'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                ><path
+                  d='m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6q0-.425.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.712-.288T16 16z'
+                ></path></svg
+              ></a
+            ><a
+              href='/contact'
+              class='flex items-center h-max justify-center w-max gap-[.4vw] px-[2vh] py-[2vh] duration-[.3s] ease-in-out fill-[#DCDDE0] hover:fill-[#FFD23F] hover:text-[#FFD23F] hover:translate-x-[4%]'
+              ><svg
+                height='32'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                ><path
+                  d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                ></path></svg
+              >Contact us<svg
+                height='28'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                ><path
+                  d='m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6q0-.425.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.712-.288T16 16z'
+                ></path></svg
+              ></a
+            ><a
+              href='/attractions'
+              class='flex items-center h-max justify-center w-max gap-[.4vw] px-[2vh] py-[2vh] duration-[.3s] ease-in-out fill-[#DCDDE0] hover:fill-[#FFD23F] hover:text-[#FFD23F] hover:translate-x-[4%]'
+              ><svg
+                height='32'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                ><path
+                  d='M10.74 10.75L12 8l1.25 2.75L16 12l-2.75 1.26L12 16l-1.26-2.74L8 12z'
+                ></path></svg
+              >Nearest Attractions<svg
+                height='28'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                ><path
+                  d='m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6q0-.425.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.712-.288T16 16z'
+                ></path></svg
+              ></a
+            >
+          </div><div
+            class='flex h-max w-full justify-between flex-[1] py-[4vh] px-[6vw]
+        duration-[.3s]
+        ease-in-out
+        fill-[#DCDDE0]
+        hover:fill-[#FFD23F]
+        hover:text-[#FFD23F]
+        hover:translate-x-[4%]'
+          >
+            <div
+              class='flex h-max flex-col justify-evenly text-[1.8vh] gap-[1.4vh] max-w-[60vw] text-[#fff]'
+            >
+              <p class='text-[#fff9]'>
+                #24, Topslip Road, Sethumadai Village, Anamalai Taluk,<br
+                />Pollachi, Coimbatore, Tamilnadu. Pincode - 642133.
+              </p><a href='tel:+91 9894648555' class='text-[#fff9]'
+                >+91 9894648555</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class='absolute to-[rgba(0,0,0,0)] bg-gradient-to-b
+    from-[#000000] top-0 via-[#000000] w-screen h-[42vh] opacity-[.7]'
+        >
+        </div><div
+          class='flex items-center h-[14vh] justify-between pt-[10vh] relative w-screen pb-[6vh] px-[6vw] bg-[#19080E]'
+        >
+          <div
+            class='text-[1.8vh] text-[#DCDDE0] border-[#DCDDE0] border-[.4vh] ease-in-out font-[600] rounded-sm shadow-3xl tracking-[.2vw] bg-inherit duration-[.3s] font-[500] hover:border-[#BEB0A7] hover:text-[#BEB0A7] px-[1.8vw] py-[1.4vh] cursor-pointer navOpenPC'
+          >
+            MENU
+          </div><div
+            class='flex items-center h-max justify-center flex-col text-[#DCDDE0] w-max pt-[6vh]'
+          >
+            <a href='/'>
+              <Image
+                alt='logo'
+                class='object-contain w-max z-[1] h-[22vh]'
+                decoding='async'
+                loading='eager'
+                src={logo}
+              /></a
+            >
+
+            <span class='text-[1.2vh] font-[600]'
+              >Sethumadai l Pollachi l Coimbatore</span
+            >
+          </div><a
+            target='_blank'
+            onclick="return gtag_report_conversion('https:/wa.link/y13k8n');"
+            href='https://wa.link/y13k8n'
+            class='convBTN text-[1.8vh] text-[#DCDDE0] border-[#DCDDE0] border-[.4vh] ease-in-out font-[600] rounded-sm shadow-3xl tracking-[.2vw] bg-inherit duration-[.3s] font-[500] hover:border-[#BEB0A7] hover:text-[#BEB0A7] px-[1.8vw] py-[1.4vh]'
+            >BOOK</a
+          >
+        </div>
+      </div>
+      <NavBarMOB />
+      <section
+        class='h-max w-screen max-w-[100vw] min-[1590px]:max-w-[99.2vw] overflow-x-hidden font-popins'
+      >
+        <div
+          class='h-max w-full pt-[28vh] flex flex-col px-[4vw] gap-[2.4vh] min-[990px]:gap-[4vh] bg-gradient-to-b from-[#552535]'
+        >
+          <h1
+            class='text-[4.2vh] w-[90%] min-[990px]:w-[60%] min-[990px]:tracking-[0vw] min-[990px]:leading-[7.8vh] min-[990px]:text-[3.2vw] leading-[5.8vh] tracking-[.1vw] text-left text-[#fff]'
+          >
+            Unlock Your Pollachi Paradise: 5 Lightning-Fast Steps to Book Down
+            to Earth Farmstay Now!
+          </h1>
+          <p
+            class='text-[2.8vh] w-[90%] leading-[4.6vh] font-[500] text-[#000] min-[990px]:w-[60%] min-[990px]:text-left'
+          >
+            Are you craving a slice of rural bliss in the heart of Tamil Nadu?
+            Look no further than <a
+              class='text-[#552535] font-[600] tracking-[-.1vw] min-[990px]:tracking-[0vw]'
+              href='/'>Down to Earth Farmstay by Laksem</a
+            > in Pollachi! This guide will walk you through the seamless process
+            of securing your perfect getaway. In just five quick steps, you'll be
+            on your way to experiencing the authentic charm of Pollachi's countryside.
+            Ready to make your dream vacation a reality? Let's dive in!
+          </p>
+        </div>
+        <div class='h-max w-full flex flex-col gap-[4vh] px-[4vw] pt-[4vh]'>
+          <p class='text-[2.4vh] leading-[4.2vh] min-[990px]:w-[60%]'>
+            Nestled in the lush landscapes of Pollachi, Down to Earth Farmstay
+            by Laksem offers an unparalleled escape from the hustle and bustle
+            of city life. With its promise of tranquility, organic living, and
+            genuine rural experiences, it's no wonder that more and more
+            travelers are seeking out this hidden gem. But how do you go about
+            booking your stay at this slice of paradise?
+          </p>
+        </div>
+        <!-- STEP 1 -->
+        <div
+          class='h-max w-full flex flex-col gap-[2vh] px-[4vw] pt-[4vh] min-[990px]:w-[60%]'
+        >
+          <h2
+            class='text-[3.2vh] font-[500] tracking-[-.1vw] min-[990px]:tracking-[0vw]'
+          >
+            Don't Worry – We've Simplified The Process Into Five Easy Steps That
+            Will Have You Ready To Go In No Time!
+          </h2>
+          <div class='h-max w-full flex flex-col gap-[4vh] pt-[2vh]'>
+            <h3 class='text-[2.8vh] font-[600]'>
+              Step 1: Reach Out via WhatsApp
+            </h3>
+            <p class='text-[2.4vh] leading-[4.2vh]'>
+              In Today's fast-paced Digital world, Down to Earth Farmstay keeps
+              things refreshingly simple. The first step to your rural retreat
+              is as easy as sending a message on WhatsApp. Here's what you need
+              to do:
+            </p>
+            <ol class='text-[2.4vh] leading-[4.2vh]'>
+              <li>- Save the farmstay's contact number: +91 9894648555</li>
+              <li>- Open WhatsApp and start a new chat with this number</li>
+              <li>
+                - Send a friendly message expressing your interest in booking a
+                stay
+              </li>
+            </ol>
+            <p class='text-[2.4vh] leading-[4.2vh]'>
+              <em
+                >Pro tip: Include your preferred dates and the number of guests
+                in your initial message to speed up the process.
+              </em>
+            </p>
+          </div>
+        </div>
+        <!-- STEP 2 -->
+        <div
+          class='h-max w-full flex flex-col gap-[2vh] px-[4vw] pt-[4vh] min-[990px]:w-[60%]'
+        >
+          <h3 class='text-[2.8vh] font-[600]'>
+            Step 2: Receive Your Personalized Quote
+          </h3>
+          <p class='text-[2.4vh] leading-[4.2vh]'>
+            Once you've sent your inquiry, the team at Down to Earth Farmstay
+            will promptly respond with a personalized quote. This quote will
+            typically include:
+          </p>
+          <ol class='text-[2.4vh] leading-[4.2vh]'>
+            <li>- The nightly rate for your stay</li>
+            <li>
+              - Any special packages or offers available during your chosen
+              dates
+            </li>
+            <li>
+              - Additional information about amenities and experiences included
+              in your stay
+            </li>
+          </ol>
+          <p class='text-[2.4vh] leading-[4.2vh]'>
+            Remember, rates may vary depending on the season and availability,
+            so it's always a good idea to inquire about multiple date options if
+            your schedule is flexible.
+          </p>
+        </div>
+        <!-- STEP 3 -->
+        <div
+          class='h-max w-full flex flex-col gap-[2vh] px-[4vw] pt-[4vh] min-[990px]:w-[60%]'
+        >
+          <h3 class='text-[2.8vh] font-[600]'>
+            Step 3: Review and Confirm Your Booking Details
+          </h3>
+          <p class='text-[2.4vh] leading-[4.2vh]'>
+            After receiving your quote, take a moment to carefully review all
+            the details. This is the perfect time to ask any questions you might
+            have about your stay. Some common queries include:
+          </p>
+          <ul class='text-[2.4vh] leading-[4.2vh]'>
+            <li>- What's the check-in and check-out time?</li>
+            <li>- Are meals included in the rate?</li>
+            <li>- What activities are available on the farm?</li>
+            <li>- Is transportation from nearby cities available?</li>
+          </ul>
+          <p class='text-[2.4vh] leading-[4.2vh]'>
+            Don't hesitate to seek clarification – the Down to Earth team is
+            there to ensure your stay is perfect from start to finish.
+          </p>
+        </div>
+        <!-- STEP 4 -->
+        <div
+          class='h-max w-full flex flex-col gap-[2vh] px-[4vw] pt-[4vh] min-[990px]:w-[60%]'
+        >
+          <h3 class='text-[2.8vh] font-[600]'>
+            Step 4: Make Your Advance Payment
+          </h3>
+          <p class='text-[2.4vh] leading-[4.2vh]'>
+            Once you're satisfied with all the details, it's time to secure your
+            booking with an advance payment. The farmstay will provide you with
+            their preferred payment method, which may include:
+          </p><ul class='text-[2.4vh] leading-[4.2vh]'>
+            <li>- Bank transfer</li>
+            <li>- Online payment gateway</li>
+            <li>- UPI payment</li>
+          </ul>
+          <p class='text-[2.4vh] leading-[4.2vh]'>
+            Always ensure you're using secure payment methods and keep a record
+            of your transaction for future reference.
+          </p>
+        </div>
+        <!-- STEP 5 -->
+        <div
+          class='h-max w-full flex flex-col gap-[2vh] py-[4vh] px-[2vw] min-[990px]:w-[60%]'
+        >
+          <h3 class='text-[2.8vh] font-[600] px-[2vw]'>
+            Step 5: Receive Your Booking Confirmation
+          </h3>
+          <p class='text-[2.4vh] leading-[4.2vh] px-[2vw]'>
+            After your advance payment is processed, you'll receive an official
+            booking confirmation. This is your golden ticket to paradise! The
+            confirmation will typically include:
+          </p>
+          <ul class='text-[2.4vh] leading-[4.2vh] px-[2vw]'>
+            <li>- Your booking dates</li>
+            <li>- The total amount paid and any remaining balance</li>
+            <li>
+              - Important information about your stay, such as what to bring and
+              how to reach the farmstay
+            </li>
+          </ul>
+          <!-- IMAGE -->
+          <div
+            class='min-[990px]:hidden h-max w-full border-[1.5px] rounded-md pt-[2svh] px-[2vw] border-[#999] overflow-hidden flex flex-col items-between justify-between gap-[2svh]'
+          >
+            <Image
+              alt='Rooms at Deluxe Cottage at Down To Earth Farmstay by Laksem, Pollachi'
+              class='rounded-sm h-[32svh] object-cover'
+              decoding='async'
+              loading='lazy'
+              src={Img}
+            />
+            <div class='h-max w-full flex flex-col items-start gap-[.4vh]'>
+              <p class='text-[#333] text-[2.8vh]'>Deluxe Cottages</p>
+              <p class='text-[#666] text-[2vh]'></p>
+              Down To Earth Farmstay by Laksem
+            </div>
+            <a
+              class='w-max block text-center pb-[1vh] text-blue-800 border-[#999] text-[2vh] font-[500] underline underline-offset-[.5vh]'
+              href='/'>View Details</a
+            >
+          </div>
+        </div>
+      </section>
+      <div
+        class='h-max w-full px-[4vw] bg-gradient-to-t from-[#F5EFDA] pb-[4vh] min-[990px]:pb-[8vh]'
+      >
+        <p class='text-[2.4vh] leading-[4.2vh] min-[990px]:w-[60%]'>
+          Booking your stay at Down to Earth Farmstay by Laksem in Pollachi is a
+          breeze with this five-step process. From your initial WhatsApp message
+          to receiving your confirmation, you're just moments away from
+          embarking on an unforgettable rural adventure. <br /><br /> The simplicity
+          of the booking process reflects the farmstay's commitment to providing
+          a genuine, hassle-free experience from start to finish.
+          <br />
+          <br /> So why wait? Your perfect Pollachi getaway is just a WhatsApp message
+          away. Reach out to Down to Earth Farmstay today and take the first step
+          towards creating memories that will last a lifetime. <br /><br /> Remember,
+          paradise is not just a place – it's an experience waiting to be booked!
+        </p>
+      </div>
+    </section>
+    <FooterMOB />
+    <FooterPC />
+  </body>
+</html>

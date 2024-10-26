@@ -1,0 +1,20 @@
+---
+const { h2, p } = Astro.props;
+---
+
+<div class='h-max w-full px-[2vw] min-[990px]:px-[2vw] my-[4vh]'>
+  <div
+    class='h-max w-full flex flex-col gap-[2vh] px-[4vw] min-[990px]:px-[2.2vw] py-[2vh] min-[990px]:w-[60%] font-popins min-[990px]:py-[4vh]'
+  >
+    <h2
+      class=`text-[3.2vh] font-[400] tracking-[-.1vw] min-[990px]:tracking-[0vw]`
+    >
+      {h2}
+    </h2>
+    <div class='h-max w-full flex flex-col gap-[2vh] pt-[2vh]'>
+      <p class=`text-[2.4vh] leading-[4.2vh]`>
+        {p}
+      </p>
+    </div>
+  </div>
+</div>

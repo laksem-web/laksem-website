@@ -1,0 +1,74 @@
+---
+import { Image } from "astro:assets";
+import deluxe from "./../../assets/AboutIMG.webp";
+import img9 from "./../../assets/gallery/img9.webp";
+import img5 from "./../../assets/gallery/img5.webp";
+import img13 from "./../../assets/gallery/img13.webp";
+import img4 from "./../../assets/gallery/img4.webp";
+---
+
+<div class='h-max w-max max-[990px]:hidden'>
+  <div
+    class='h-max flex items-start border-[#000] border-t-[1px] justify-around max-[990px]:hidden pr-[2vw] w-max'
+  >
+    <div class='h-max flex flex-col gap-[0vh] w-[64vw]'>
+      <div
+        class='flex items-center h-[75vh] justify-evenly pt-[10vh] translate-x-[2%] w-[60vw]'
+      >
+        <div class='w-[32%] h-[94.6%]'>
+          <Image
+            alt='[object Object]'
+            class='object-cover w-full cursor-pointer ease-in-out h-full hover:scale-[1.01] rounded-sm z-[9] duration-[1s]'
+            decoding='async'
+            loading='lazy'
+            src={img4}
+          />
+        </div><div
+          class='flex items-center flex-col h-full justify-evenly w-[32%]'
+        >
+          <div class='h-[46%] w-full'>
+            <Image
+              alt='[object Object]'
+              class='object-cover w-full cursor-pointer ease-in-out h-full hover:scale-[1.01] rounded-sm z-[9] duration-[.3s]'
+              decoding='async'
+              loading='lazy'
+              src={deluxe}
+            />
+          </div><div class='h-[46%] w-full'>
+            <Image
+              alt='[object Object]'
+              class='object-cover w-full cursor-pointer ease-in-out h-full hover:scale-[1.01] rounded-sm z-[9] duration-[.3s]'
+              decoding='async'
+              loading='lazy'
+              src={img13}
+            />
+          </div>
+        </div><div class='flex flex-col h-full justify-evenly w-[32%]'>
+          <div class='h-[46%] w-full'>
+            <Image
+              alt='[object Object]'
+              class='object-cover w-full cursor-pointer ease-in-out h-full hover:scale-[1.01] rounded-sm z-[9] duration-[.3s]'
+              decoding='async'
+              loading='lazy'
+              src={img5}
+            />
+          </div><div class='h-[46%] w-full'>
+            <Image
+              alt='[object Object]'
+              class='object-cover w-full cursor-pointer ease-in-out h-full hover:scale-[1.01] rounded-sm z-[9] duration-[.3s]'
+              decoding='async'
+              loading='lazy'
+              src={img9}
+            />
+          </div>
+        </div>
+      </div>
+      <div class='h-max w-full flex justify-end pr-[4vw]'>
+        <a
+          class='text-[2vh] text-[#ffefef] underline underline-offset-[.4vh] hover:text-[#fff9]'
+          href='/gallery'>see more</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

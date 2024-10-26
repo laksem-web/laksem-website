@@ -1,0 +1,64 @@
+---
+import Desktop from "../../layouts/Desktop.astro";
+---
+
+<Desktop>
+  <div class='h-max w-screen relative flex flex-col gap-[6vh]'>
+    <div class='h-max w-max max-[990px]:hidden overflow-hidden relative'>
+      <div
+        class='flex h-max w-screen justify-start pb-[1vh] pt-[12vh] px-[6.4vw] z-[2]'
+      >
+        <span class='font-[500] text-[#3B1F1F] text-[5vh] z-[2]'
+          >Featured Youtube Videos:</span
+        >
+      </div>
+    </div>
+    <div class='flex h-max w-screen justify-evenly'>
+      <div class='flex h-max flex-col gap-[2vh] w-max'>
+        <span class='font-[500]'>Food N Travel by Ebin Jose</span>
+        <iframe
+          allow='accelerometer; autoplay;  encrypted-media; gyroscope; picture-in-picture; '
+          allowfullscreen
+          class='rounded-md h-[44vh] w-[40vw]'
+          loading='lazy'
+          src='https://www.youtube.com/embed/uj2fJQA_v18?si=ATDiYmfIh1VQPBWV'
+          title='YouTube video player'></iframe>
+      </div>
+      <div class='flex h-max flex-col gap-[2vh] w-max'>
+        <span class='font-[500]'>Drone View:</span>
+        <iframe
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          allowfullscreen
+          class='rounded-md h-[44vh] w-[40vw]'
+          loading='lazy'
+          src='https://www.youtube.com/embed/V-GwOjzEQP8?si=pPPRL2rFzG9gSwSX'
+          title='YouTube video player'
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <div class='flex h-max w-screen justify-evenly'>
+      <div class='flex h-max flex-col gap-[2vh] w-max'>
+        <span class='font-[500]'>A Walk-through of laksem Mud resort:</span>
+        <iframe
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          allowfullscreen
+          class='rounded-md h-[44vh] w-[40vw]'
+          loading='lazy'
+          src='https://www.youtube.com/embed/ia5AKXeGzt4?si=kiOjFyQO6BUD22fm'
+          title='YouTube video player'></iframe>
+      </div>
+      <div class='flex h-max flex-col gap-[2vh] w-max'>
+        <span class='font-[500]'>Full Review by hks life:</span>
+        <iframe
+          allow='accelerometer; autoplay;  encrypted-media; gyroscope; picture-in-picture; '
+          allowfullscreen
+          class='rounded-md h-[44vh] w-[40vw]'
+          loading='lazy'
+          src='https://www.youtube.com/embed/ezuIBL-ndRU?si=s7kwSd5InKQDxAd-'
+          title='YouTube video player'></iframe>
+      </div>
+    </div>
+  </div>
+</Desktop>

@@ -1,0 +1,74 @@
+---
+import { Image } from "astro:assets";
+import Mobile from "../../layouts/Mobile.astro";
+import AboutIMG from "./../../assets/AboutIMG.webp";
+
+const { location } = Astro.props;
+---
+
+<Mobile>
+  <section class='h-max w-max min-[990px]:hidden'>
+    <div
+      class='flex h-max flex-col w-screen relative bg-gradient-to-b pt-[4vh] from-[#562636] to-[#3B1F1F] via-[#1D0B0D]'
+    >
+      <div
+        class='flex items-center h-max justify-center flex-col w-full pl-[6vw] pr-[10vw] pt-[2vh] text-[#F2FDFF] z-[2]'
+      >
+        <h2
+          class='font-[500] bg-clip-text inline-block text-transparent bg-gradient-to-b from-[#fff] text-start to-[#DCDDE0] leading-[5.2vh] text-[4.4vh]'
+        >
+          Your Perfect Countryside Getaway: {location} Farmstay for Couples & Families
+        </h2>
+      </div><div
+        class='flex items-center h-max justify-center relative pt-[8vh] card pb-[4vh] px-[6vw] w-full'
+      >
+        <Image
+          alt='deluxe cottages for families at sethumadai, pollachi, coimbatore from "Down to Earth" Farmstay by Laksem'
+          class='object-cover rounded-md shadow-lg h-[42vh] w-screen'
+          decoding='async'
+          loading='lazy'
+          src={AboutIMG}
+        /><div
+          class='absolute mx-auto rounded-md bg-black h-[42vh] opacity-[.2] overlayAboutMOB top-[8vh] w-[88vw] z-[9]'
+        >
+        </div>
+      </div><div
+        class='flex h-max flex-col w-full pt-[2vh] border-b-[1px] gap-[1.8vh] pb-[8vh] px-[6vw] text-[#DCDDE0]'
+      >
+        <div class='h-max w-full text-[3.2vh] text-start'>
+          <h3>About</h3>
+        </div><div class='text-start leading-[4vh] text-[2.4vh]'>
+          <p class=''>
+            The cottage is an amalgamation of naturally and locally available
+            materials with less to no cement consumption during construction. It
+            is an attempt to balance the generosity of space to the economy and
+            availability of materials.One of the most interesting features is
+            the traditional method of building with earth- cob. Cob is a system
+            where the walls are packed with a mixture of MUD and lime. These mud
+            walls bear thickness of 2 feet ensuring the durability and strength
+            of the structure. These massive walls breathe through its tiny pores
+            and keep the air fresh and healthy. The thermal properties of cob
+            regulate the temperature indoors thus proving to be energy
+            efficient.
+          </p>
+        </div>
+        <a
+          onclick="return gtag_report_conversion('https:/wa.link/y13k8n');"
+          class='convBTN underline text-[#fff] font-[600] text-[2vh] underline-offset-[1vh] flex items-center gap-[1.2vw]'
+          href='tel:+91 9894648555'
+        >
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='24'
+            height='24'
+            viewBox='0 0 24 24'
+            ><path
+              fill='#fff'
+              d='M16.15 13H5q-.425 0-.712-.288T4 12q0-.425.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z'
+            ></path></svg
+          >Discover More, Call Now !
+        </a>
+      </div>
+    </div>
+  </section>
+</Mobile>

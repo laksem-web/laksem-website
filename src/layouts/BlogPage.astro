@@ -1,0 +1,23 @@
+---
+const { title, desc, canonical, fromBG, viaBG, toBG, textCLR } = Astro.props;
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>{title}</title>
+    <link rel='sitemap' href='/sitemap.xml' />
+    <link href='/icon2.webp' rel='icon' type='image/svg+xml' />
+    <meta name='description' content=`${desc}` />
+    <link rel='”canonical”' href=`${canonical}` />
+  </head>
+  <body>
+    <section
+      class=`h-max max-w-screen overflow-x-hidden relative bg-gradient-to-b from-[#401C27] via-[#C08081] to-[#FBCEB1] text-[#f1f1f1]`
+    >
+      <slot />
+    </section>
+  </body>
+</html>

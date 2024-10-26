@@ -1,0 +1,35 @@
+---
+const { heading, l1, l2, l3, l4, l5, l6 } = Astro.props;
+---
+
+<!-- PC -->
+<div class='max-[990px]:hidden h-max w-max'>
+  <div
+    class='h-max max-w-[65vw] flex flex-col gap-[4vh] pt-[2vh] pl-[4vw] pr-[1vw]'
+  >
+    <ol class='text-[1.4vw] flex flex-col gap-[1.8vh]'>
+      <li class='underline underline-offset-[1.4vh] mb-[.4vh]'>{heading}</li>
+      <li>{l1}</li>
+      <li>{l2}</li>
+      <li>{l3}</li>
+      <li>{l4}</li>
+      <li>{l5}</li>
+      <li>{l6}</li>
+    </ol>
+  </div>
+</div>
+<!-- MOB -->
+<div class='min-[990px]:hidden h-max w-max'>
+  <div class='h-max max-w-[90vw] pl-[2vw] pr-[1vw]'>
+    <ol class='text-[2.4vh] flex flex-col gap-[1.2vh]'>
+      <li class='underline underline-offset-[.6vh] mb-[1.2vh]'>{heading}</li>
+
+      <li>{l1}</li>
+      <li>{l2}</li>
+      <li>{l3}</li>
+      <li>{l4}</li>
+      <li>{l5}</li>
+      <li>{l6}</li>
+    </ol>
+  </div>
+</div>

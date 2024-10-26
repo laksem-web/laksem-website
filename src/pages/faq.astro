@@ -1,0 +1,54 @@
+---
+import Desktop from "../layouts/Desktop.astro";
+import Page from "../layouts/Page.astro";
+
+import FaqBlocksP from "../components/PC/faqBlocks-P.astro";
+---
+
+<Page>
+  <Desktop>
+    <div class='h-screen w-screen overflow-x-hidden flex flex-col gap-[4vh]'>
+      <div class='h-[16%] w-full flex justify-center items-end text-[4.2vh]'>
+        <span>FAQ: Frequantly Asked Questions.</span>
+      </div>
+      <div class='h-[80%] w-full flex flex-col justify-evenly items-center'>
+        <div class='h-max w-[80%] flex justify-between px-[2vw]'>
+          <FaqBlocksP
+            no='01'
+            qst='What are the check-in and check-out Timings?'
+            ans=' The standard check-in time and check-out time is 12 noon.'
+          />
+          <FaqBlocksP
+            no='02'
+            qst='Is pets allowed there?'
+            ans=' Yes, pets are allowed.'
+          />
+        </div>
+        <div class='h-max w-[80%] flex justify-between px-[2vw]'>
+          <FaqBlocksP
+            no='03'
+            qst='What Dining Options are Available?'
+            ans='Home Food Available See what food are availble'
+          />
+          <FaqBlocksP
+            no='04'
+            qst='Is Parking Space Available?'
+            ans='Free Parking'
+          />
+        </div>
+        <div class='h-max w-[80%] flex justify-between px-[2vw]'>
+          <FaqBlocksP
+            no='05'
+            qst='What are the check-in and check-out Timings?'
+            ans=' The standard check-in time and check-out time is 12 noon.'
+          />
+          <FaqBlocksP
+            no='06'
+            qst='What are the check-in and check-out Timings?'
+            ans=' The standard check-in time and check-out time is 12 noon.'
+          />
+        </div>
+      </div>
+    </div>
+  </Desktop>
+</Page>

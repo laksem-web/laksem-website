@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /attractions/
+Allow: /
+Sitemap: https://laksemfarmstay.com/sitemap.xml

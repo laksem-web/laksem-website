@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import Deluxe from "./../../assets/cottageIMG.webp";
+---
+
+<div class='h-max w-max max-[990px]:hidden'>
+  <section
+    class='flex items-center justify-between absolute h-[18vh] max-[990px]:backdrop-blur-[8px] px-[6vw] text-[#ececec] top-0 w-screen z-[99]'
+  >
+    <div class='flex items-center w-max h-full'>
+      <a
+        href='/'
+        class='text-[1.8vh] bg-inherit border-[#999] border-[.4vh] duration-[.3s] ease-in-out font-[500] font-[600] hover:border-[#BEB0A7] hover:text-[#BEB0A7] max-[990px]:px-[2.4vw] max-[990px]:py-[1vh] px-[1.8vw] py-[1.4vh] rounded-sm shadow-3xl text-[#999] tracking-[.2vw]'
+        >BACK</a
+      >
+    </div>
+    <div class='h-max flex w-max items-end pt-[4vh]'>
+      <a href='/'
+        ><Image
+          alt='logo'
+          class='max-[990px]:h-[14vh] h-[18vh] object-contain w-max z-[1]'
+          decoding='async'
+          loading='eager'
+          src={Deluxe}
+        /></a
+      >
+    </div><div class='h-max flex w-max items-end'>
+      <a
+        href='https://wa.link/y13k8n'
+        target='_blank'
+        class='text-[1.8vh] bg-inherit border-[#999] border-[.4vh] duration-[.3s] ease-in-out font-[500] font-[600] hover:border-[#BEB0A7] hover:text-[#BEB0A7] max-[990px]:px-[2.4vw] max-[990px]:py-[1vh] px-[1.8vw] py-[1.4vh] rounded-sm shadow-3xl text-[#999] tracking-[.2vw]'
+        >BOOK</a
+      >
+    </div>
+  </section>
+</div>

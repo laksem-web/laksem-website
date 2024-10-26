@@ -1,0 +1,86 @@
+---
+import Mobile from "../../layouts/Mobile.astro";
+import { Image } from "astro:assets";
+import HeroMOB from "./../../assets/heroPC.webp";
+---
+
+<Mobile>
+  <section class='h-max max-w-[100vw] oveflow-x-hidden'>
+    <div
+      class='flex h-[80vh] w-full flex-col justify-between pt-[2vh] relative'
+    >
+      <div class='flex h-max flex-col w-full gap-[2.4vh]'>
+        <h1
+          class='font-[500] mt-[5.8vh] itallic ml-[6vw] text-[#fff] text-[9.4vw] tracking-[-.1vw]'
+        >
+          Laksem Farm Stay
+        </h1><div
+          class='flex h-max flex-col w-full gap-[3vh] pr-[12vw] tracking-[.4vw]'
+        >
+          <h3 class='ml-[] text-[#ffefef] ml-[6vw]'>
+            - Farm Stay Situated in Pollachi
+          </h3><div
+            class='h-max w-max py-[2vh] backdrop-blur-[px] flex flex-col gap-[8vh] bg-[rgba(0,0,0,0)] bg-opacity-[1] rounded-md'
+          >
+            <p
+              class='h-max z-[99] ml-[6vw] font-[500] mr-[4vw] text-[#ececec] text-[2.4vh] tracking-[.3vw] w-[72vw]'
+            >
+              Nestled among Anaimalai, Topslip & Parambikulam, this eco-cottage
+              harmoniously integrates with coconut groves, providing a serene
+              retreat for families. Conveniently located near Pollachi &
+              Coimbatore, it offers an idyllic escape amidst lush plantations.
+            </p>
+            <!-- <div
+              class='h-max w-max bg-black py-[2vh] backdrop-blur-[8px] bg-opacity-[.4] pl-[3vw]'
+            >
+              <p
+                class='adText text-[1.8vh] text-[#fff9] tracking-[.1vw] text-center'
+              >
+                280+ Top-Rated Reviews | Families Choice | Free Parking | Home
+                Food Available | Kid's Approved | Air Conditioning | Pool |
+                Couple Friendly
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </div><span class='text-[#777] text-[2vh]'></span>
+    </div>
+    <div class='absolute top-0 top-0 w-screen h-screen overflow-hidden z-[-1]'>
+      <Image
+        alt='Deluxe Cottage Balcony View'
+        class='h-full w-full object-cover heroMOB'
+        decoding='async'
+        loading='lazy'
+        src={HeroMOB}
+        id='heroM'
+      /><div
+        class='absolute top-0 w-screen h-screen bg-gradient-to-b from-[rgba(0,0,0,0)] opacity-[.6] overlayBG-MOB to-[#562636] via-[#000] z-[2]'
+      >
+      </div>
+    </div>
+  </section>
+</Mobile>
+<script>
+  import gsap from "gsap";
+
+  function animateHero() {
+    console.log("hi");
+    gsap.to(".heroMOB", {
+      duration: 40,
+      ease: "power2",
+      scale: 1.4,
+      yoyo: true,
+      repeat: -1,
+      y: -120,
+    });
+
+    gsap.to(".adText", {
+      delay: 4,
+      x: -300,
+      duration: 32,
+      yoyo: true,
+      repeat: -1,
+    });
+  }
+  animateHero();
+</script>
